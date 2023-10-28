@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#0f0c29, #302b63, #2C5364);
+}
+
+.formulario {
+  /* background-color: aqua; */
+  background: linear-gradient(#0F2027, #203A43, #2C5364);
+  text-align: center;
+  padding: 5%;
+  width: 30rem;
+  border-radius: 30px;
+  height: 18rem;
+  /* height: 15rem; */
+}
+
+.form-titulo {
+  /* background-color: brown; */
+  height: 3rem;
+}
+
+.form-titulo h2 {
+  margin-right: 100px;
+  color: #E6E5E1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 5px;
+  /* border-radius: 5px;
+  border: 1px solid #ccc; */
+  background-color: rgba(0, 0, 255, 0);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+    /* border-color: transparent; */
+  color: white;
+}
+
+input:valid,
+input:invalid {
+  background-color: rgba(0, 0, 255, 0);
+}
+
+button[type="submit"] {
+  padding: 10px 70px;
+  background-color: #E6E5E1;
+    /* color: #fff; */
+  color: #274855;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+
+.error-message {
+  color: white;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    height: 40rem;
+  }
+  .formulario {
+    width: 15rem;
+  }
+  .error-message {
+    font-size: 0.7rem 
+  }
+}
